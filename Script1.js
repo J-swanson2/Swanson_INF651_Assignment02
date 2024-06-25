@@ -33,4 +33,16 @@ function passwordSet() {
     document.getElementById("confirmPrompt").textContent = "Password set succesful!";
 }
 
+function multiply() {
+    const table = document.getElementById("table");
+    let x = prompt("Enter a number from 1 to 10");
+    let tableText = '';
+    for (let i = 1; i <= 10; i++) {
+        tableText = x + " x " + i + " = " + (i * x) + "\n";
+        table.innerText += tableText;
+        
+    }
+    
+}
+
 
